@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./MoviesResults.css";
 const MoviesResults = ({ movies }) => {
     return (
         <div className="MoviesResults-container">

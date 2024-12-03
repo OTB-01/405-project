@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MoviesResults from "./MoviesResults";
+import "./Search.css";
 
 const Search = () => {
     const [searchMovie, setSearchMovie] = useState(null);
@@ -17,12 +18,14 @@ const Search = () => {
         <>
             <div className="search-container">
                 <h1>Search for a movie</h1>
-                <input
-                    type="text"
-                    placeholder="Search for a movie"
-                    onChange={(e) => setSearchMovie(e.target.value)}
-                />
-                <button onClick={handleSearch}>Search</button>
+                <div className="search-wrapper">
+                    <input
+                        type="text"
+                        placeholder="Search for a movie"
+                        onChange={(e) => setSearchMovie(e.target.value)}
+                    />
+                    <button onClick={handleSearch}>Search</button>
+                </div>
             </div>
             {searchResult && <MoviesResults movies={searchResult} />}
         </>

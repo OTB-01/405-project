@@ -1,0 +1,32 @@
+.MoviesResults-container {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.movie-card {
+    background-color: rgb(30, 30, 30);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid mediumturquoise;
+    border-radius: 5px;
+}
+.movie-card a {
+    text-decoration: none;
+}
+
+.movie-card h3 {
+    color: wheat;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid mediumturquoise;
+    border-top: 1px solid mediumturquoise;
+}
+
+.movie-card:hover {
+    position: relative;
+    top: -5px;
+    left: 5px;
+}

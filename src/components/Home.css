@@ -1,0 +1,9 @@
+.Trending-container {
+    background-color: rgb(30, 30, 30);
+}
+
+.Trending-container h1 {
+    color: wheat;
+    text-align: center;
+    padding: 10px;
+}

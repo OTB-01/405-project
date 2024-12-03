@@ -1,0 +1,59 @@
+.backdrop-container {
+    background-repeat: "no-repeat";
+    background-size: "cover";
+}
+.backdrop-blur {
+    backdrop-filter: blur(5px);
+}
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    padding-top: 20px;
+}
+.movie-details-container span {
+    display: inline;
+    border-radius: 5px;
+}
+.movie-buttons {
+    margin-top: 5px;
+}
+.movie-buttons :hover {
+    cursor: pointer;
+}
+.imdb-button {
+    margin-right: 5px;
+    color: black;
+    font-size: larger;
+    background-color: gold;
+    border: 1px solid gold;
+    border-radius: 5px;
+    padding: 5px;
+}
+.watchlist-button {
+    margin-right: 5px;
+    color: wheat;
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid mediumturquoise;
+    border-radius: 5px;
+    padding: 5px;
+}
+.details {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.details p,
+ul {
+    color: whitesmoke;
+    padding: 0px 25px 10px 25px;
+    margin-left: 5px;
+
+    border-left: 1px solid mediumturquoise;
+    border-bottom: 1px solid mediumturquoise;
+}

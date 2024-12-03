@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import MoviesResults from "./MoviesResults";
-
+import "./Home.css";
 const Home = () => {
     const [trendingMovies, setTrendingMovies] = useState(null);
 

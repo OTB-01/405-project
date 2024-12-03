@@ -1,0 +1,29 @@
+.search-container {
+    background-color: rgb(30, 30, 30);
+}
+
+.search-container h1 {
+    color: wheat;
+    text-align: center;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.search-wrapper input {
+    margin-bottom: 20px;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+}
+
+.search-wrapper button {
+    width: 55px;
+    height: 35px;
+    padding: 5px;
+}
