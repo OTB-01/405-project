@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./MoviesResults.css";
 const MoviesResults = ({ movies }) => {
+    //console.log(movies);
     return (
         <div className="MoviesResults-container">
             {movies.map((movie) => {

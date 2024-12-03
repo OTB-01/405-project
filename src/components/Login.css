@@ -1,0 +1,34 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.login-form input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.login-form button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.google-login {
+    background-color: wheat;
+    font-size: 15px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}

@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/authContext/index.jsx";
+import { useWatchlist } from "../context/watchlistContext/watchlistContext.js";
 import "./MovieDetails.css";
+
 const MovieDetails = () => {
     const params = useParams();
     const id = params.id;
+    const { userLoggedIn } = useAuth();
+    const { addToWatchlist } = useWatchlist();
+    const navigate = useNavigate();
 
     const [movieDetails, setMovieDetails] = useState(null);
+
     useEffect(() => {
         const fetchMovieDetails = async () => {
             const response = await fetch(
@@ -19,7 +26,12 @@ const MovieDetails = () => {
     }, [id]);
 
     const handleAddToWatchlist = () => {
-        //TODO: add movie to watchlist ==> protected route
+        if (!userLoggedIn) {
+            navigate("/login");
+        } else {
+            console.log(movieDetails);
+            addToWatchlist(movieDetails);
+        }
         console.log("Add to watchlist");
     };
 

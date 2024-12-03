@@ -11,19 +11,29 @@
     border-bottom: 1px solid mediumturquoise;
 }
 
-/* TODO: add login link
 .nav-bar li:last-child {
-    margin-left: 75%;
+    position: absolute;
+    right: 0;
+    top: 20px;
     padding: 5px;
     border: #f0f0f0 1px solid;
     border-radius: 5px;
 }
-*/
+.nav-bar li:last-child :hover {
+    background-color: wheat;
+    color: black;
+    position: relative;
+    top: 0;
+    left: 0;
+}
 .nav-bar a {
     text-decoration: none;
     color: white;
 }
-
+.nav-bar button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
 .nav-bar a:hover {
     position: relative;
     top: -3px;

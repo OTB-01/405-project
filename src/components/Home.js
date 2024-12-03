@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import MoviesResults from "./MoviesResults";
+import { useAuth } from "../context/authContext/index.jsx";
 import "./Home.css";
 const Home = () => {
     const [trendingMovies, setTrendingMovies] = useState(null);
+    //const { watchList } = useAuth();
+    //console.log(watchList);
 
     const getTrendingMovies = async () => {
         try {

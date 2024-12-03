@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
-import "./Nav.css"
+import { useNavigate, Link } from "react-router-dom";
+import { useAuth } from "../context/authContext";
+import { doSignOut } from "../firebase/auth";
+import "./Nav.css";
 
 const Nav = () => {
+    const navigate = useNavigate();
+    const { userLoggedIn } = useAuth();
+
     return (
         <div className="nav-bar">
             <ul>
@@ -12,8 +17,26 @@ const Nav = () => {
                     <Link to="search">Search</Link>
                 </li>
                 <li>
-                    <Link to="watchlist">Watch list</Link>
+                    <Link to="watchlist">WatchList</Link>
                 </li>
+
+                {userLoggedIn ? (
+                    <li>
+                        <button
+                            onClick={() => {
+                                doSignOut().then(() => {
+                                    navigate("/");
+                                });
+                            }}
+                        >
+                            Sign out
+                        </button>
+                    </li>
+                ) : (
+                    <li>
+                        <Link to="login">Login</Link>
+                    </li>
+                )}
             </ul>
         </div>
     );
