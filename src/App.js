@@ -8,7 +8,8 @@ import Search from "./components/Search.js";
 import Login from "./components/Login.js";
 import MovieDetails from "./components/MovieDetails.js";
 import WatchList from "./components/WatchList.js";
-
+import Footer from "./components/Footer.js";
+import Register from "./components/Register.js";
 import "./App.css";
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
                             <Routes>
                                 <Route path="/" element={<Home />} />
                                 <Route path="/login" element={<Login />} />
+                                <Route
+                                    path="/register"
+                                    element={<Register />}
+                                />
                                 <Route
                                     path="/movie-details/:id"
                                     element={<MovieDetails />}
@@ -39,6 +44,7 @@ function App() {
                                 <Route path="search" element={<Search />} />
                             </Routes>
                         </main>
+                        <Footer />
                     </div>
                 </WatchlistProvider>
             </AuthProvider>

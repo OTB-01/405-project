@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/authContext/index.jsx";
 import {
     doSignInWithEmailAndPassword,
@@ -47,6 +47,7 @@ const Login = () => {
 
     return (
         <div className="login-wrapper">
+            <h1>Login</h1>
             <form className="login-form" onSubmit={onSubmit}>
                 <input
                     type="email"
@@ -61,11 +62,15 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
                 <button type="submit">Login</button>
-            </form>
+                <span className="register-line">
+                    Don't have an account?
+                    <Link to="/register"> Register here</Link>
+                </span>
 
-            <button className="google-login" onClick={GoogleSignIn}>
-                Sign in with Google
-            </button>
+                <button className="google-login" onClick={GoogleSignIn}>
+                    Sign in with Google
+                </button>
+            </form>
         </div>
     );
 };
