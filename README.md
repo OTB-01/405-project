@@ -1,4 +1,4 @@
-# movei App
+# movie App
 
 **The Movie App** is a React-based movie discovery and management application.
 
