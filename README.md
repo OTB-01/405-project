@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# movei App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**The Movie App** is a React-based movie discovery and management application.
 
-## Available Scripts
+using the TMDB API, the app allows users to browse detailed information about movies, add them to a personalized watchlist, and remove them as needed. The app leverages the TMDB API for real-time movie data and features user authentication for a tailored experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   **Home Page**: show trending movies this week
+-   **Search**: search for a specefic movie
+-   **Watch List**: allow authenticated users to save their movies to the watch list
+-   **Movie Details**: show more information and details on any movie
+-   **Login / Register**: allow users to login to their accounts using Email/Password Or by their Google account
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## What I Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **React.js**
+-   **Firebase authentication**
+-   **TMDB API**
+-   **CSS Styling**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="screenshots/Home.png" alt="Home Page" width="600" />
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Search Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="screenshots/Search.png" alt="Search Page" width="600" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### WatchList Page
 
-## Learn More
+<img src="screenshots/WatchList.png" alt="WatchList Page" width="600" />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Movie Details Page
 
-### Code Splitting
+<img src="screenshots/Movie-details.png" alt="Movie Details Page" width="600" />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### Login Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img src="screenshots/Login.png" alt="Login Page" width="600" />
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Installation
 
-### Advanced Configuration
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```bash
+    git clone https://github.com/OTB-01/405-project.git
+    cd 405-project
+    ```
 
-### Deployment
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ```bash
+    npm install
+    ```
 
-### `npm run build` fails to minify
+3. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```bash
+    npm start
+    ```
+
+---
