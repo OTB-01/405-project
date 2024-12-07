@@ -31,6 +31,7 @@ const MovieDetails = () => {
         } else {
             console.log(movieDetails);
             addToWatchlist(movieDetails);
+            navigate("/watchlist");
         }
         console.log("Add to watchlist");
     };
