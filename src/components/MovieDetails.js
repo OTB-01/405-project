@@ -8,7 +8,7 @@ const MovieDetails = () => {
     const params = useParams();
     const id = params.id;
     const { userLoggedIn } = useAuth();
-    const { addToWatchlist } = useWatchlist();
+    const { addToWatchlist, inWatchlist, removeFromWatchlist } = useWatchlist();
     const navigate = useNavigate();
 
     const [movieDetails, setMovieDetails] = useState(null);
@@ -23,7 +23,7 @@ const MovieDetails = () => {
             setMovieDetails(responseJSON);
         };
         fetchMovieDetails();
-    }, [id]);
+    }, [id, inWatchlist]);
 
     const handleAddToWatchlist = () => {
         if (!userLoggedIn) {
@@ -72,12 +72,23 @@ const MovieDetails = () => {
                             >
                                 IMDB
                             </button>
-                            <button
-                                className="watchlist-button"
-                                onClick={handleAddToWatchlist}
-                            >
-                                Add to watchlist
-                            </button>
+                            {inWatchlist ? (
+                                <button
+                                    className="watchlist-button"
+                                    onClick={() => {
+                                        removeFromWatchlist(movieDetails.id);
+                                    }}
+                                >
+                                    Remove from watchlist
+                                </button>
+                            ) : (
+                                <button
+                                    className="watchlist-button"
+                                    onClick={handleAddToWatchlist}
+                                >
+                                    Add to watchlist
+                                </button>
+                            )}
                         </span>
                         <div className="details">
                             <h2>Overview</h2>
