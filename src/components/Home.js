@@ -23,12 +23,10 @@ const Home = () => {
     getTrendingMovies();
 
     return (
-        <>
-            <div className="Trending-container">
-                <h1>Trending Movies This Week</h1>
-                {trendingMovies && <MoviesResults movies={trendingMovies} />}
-            </div>
-        </>
+        <div className="Trending-container">
+            <h1>Trending Movies This Week</h1>
+            {trendingMovies && <MoviesResults movies={trendingMovies} />}
+        </div>
     );
 };
 
